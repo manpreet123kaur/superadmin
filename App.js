@@ -154,3 +154,5 @@ export default function App() {
 }
 
 AppRegistry.registerComponent('YourAppName', () => App);
+
+console.log("git testing")
