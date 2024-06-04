@@ -32,12 +32,6 @@ const Adminprofile = ({ navigation }) => {
     const [isEnabled, setIsEnabled] = useState(false);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
-    // const [fontsLoaded] = useFonts({
-    //     mainFont: require("./assets/fonts/Metropolis-Medium.otf")
-    // });
-    // if (!fontsLoaded) {
-    //     return <Text>Loading...</Text>;
-    // }
 
     const [selected, setSelected] = useState("");
 
@@ -58,7 +52,7 @@ const Adminprofile = ({ navigation }) => {
     return (
         <>
             <ScrollView>
-                <View style={{ paddingLeft: 20, backgroundColor: '#233CBF', paddingTop: 40 }}>
+                <View style={{ paddingLeft: 20, backgroundColor: '#233CBF', paddingTop: 30 }}>
                     <TouchableOpacity onPress={() => navigation.navigate("DrawernavigationS")}>
                         <FontAwesomeIcon style={{ width: '100%' }} color='white' size={22} icon={faArrowLeftLong} />
                     </TouchableOpacity>
@@ -150,15 +144,20 @@ const Adminprofile = ({ navigation }) => {
                             </TouchableOpacity>
                         </View>
                     </View>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20, marginLeft: 20, paddingBottom: 20 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20, paddingBottom: 20, width: '95%', alignSelf: 'center' }}>
                         <TouchableOpacity style={{ width: '30%', marginRight: 15 }} >
                             <TouchableOpacity style={{ width: '100%', backgroundColor: '#878bff', padding: 10, borderRadius: 5 }} onPress={handleButtonClick} >
                                 <Text style={{ fontFamily: 'mainFont', fontSize: 11, width: '100%', textAlign: 'center', color: 'white' }}>Activate</Text>
                             </TouchableOpacity>
                         </TouchableOpacity>
-                        <TouchableOpacity style={{ width: '30%' }}>
+                        <TouchableOpacity style={{ width: '30%', marginRight: 20 }}>
                             <TouchableOpacity style={{ width: '100%', backgroundColor: 'red', padding: 10, borderRadius: 5 }} onPress={handleButtonClicktwo}>
                                 <Text style={{ fontFamily: 'mainFont', fontSize: 11, width: '100%', textAlign: 'center', color: 'white' }}>Deactivate</Text>
+                            </TouchableOpacity>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={{ width: '30%' }}>
+                            <TouchableOpacity style={{ width: '100%', backgroundColor: '#233CBF', padding: 10, borderRadius: 5 }} onPress={() => navigation.navigate("DrawernavigationS")}>
+                                <Text style={{ fontFamily: 'mainFont', fontSize: 11, width: '100%', textAlign: 'center', color: 'white' }}>Save</Text>
                             </TouchableOpacity>
                         </TouchableOpacity>
                     </View>

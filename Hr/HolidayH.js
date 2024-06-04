@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useFonts } from "expo-font";
-import { Text, View, TouchableOpacity, ScrollView, Image ,Modal,TextInput} from 'react-native';
+import { Text, View, TouchableOpacity, ScrollView, Image, Modal, TextInput } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faCalendar, faPlus, faTrashCan ,faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
-import DateTimePicker from '@react-native-community/datetimepicker';
+import { faCalendar, faPlus, faTrashCan, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
 
-const Holidays = ({ navigation }) => {
+const HolidayH = ({ navigation }) => {
     const [date, setDate] = useState(new Date());
     const onChange = (event, selectedDate) => {
         const currentDate = selectedDate || date;
@@ -74,6 +73,7 @@ const Holidays = ({ navigation }) => {
                             )
                         } */}
                     </View>
+
                     <View style={{ alignSelf: "flex-end", padding: 20, flexDirection: 'row', alignItems: 'center' }}>
                         <TouchableOpacity style={{ backgroundColor: 'grey', padding: 6, borderRadius: 8, margin: 8 }} onPress={handleButtonClicktwo}>
                             <FontAwesomeIcon size={20} color='white' icon={faPlus} />
@@ -82,6 +82,7 @@ const Holidays = ({ navigation }) => {
                             <FontAwesomeIcon size={15} color='white' icon={faTrashCan} />
                         </TouchableOpacity>
                     </View>
+
                     <View>
                         <View>
                             <View style={{ flexDirection: 'row', alignItems: 'center', padding: 10, paddingLeft: 20 }}>
@@ -306,4 +307,4 @@ const Holidays = ({ navigation }) => {
     )
 }
 
-export default Holidays;
+export default HolidayH;

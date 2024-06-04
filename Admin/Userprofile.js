@@ -137,17 +137,25 @@ const Userprofile = ({ navigation }) => {
                             <Text style={{ fontSize: 13, color: 'grey', fontFamily: 'mainFont' }}>Onboarding required</Text>
                         </View>
 
-                        <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20, marginLeft: 20 }}>
+                        <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20, alignSelf:'center', width: '95%' }}>
                             <TouchableOpacity style={{ width: '30%', marginRight: 15 }} >
                                 <TouchableOpacity style={{ width: '100%', backgroundColor: '#878bff', padding: 10, borderRadius: 5 }} onPress={handleButtonClick} >
                                     <Text style={{ fontFamily: 'mainFont', fontSize: 11, width: '100%', textAlign: 'center', color: 'white' }}>Activate</Text>
                                 </TouchableOpacity>
                             </TouchableOpacity>
-                            <TouchableOpacity style={{ width: '30%' }}>
+
+                            <TouchableOpacity style={{ width: '30%', marginRight: 20 }}>
                                 <TouchableOpacity style={{ width: '100%', backgroundColor: 'red', padding: 10, borderRadius: 5 }} onPress={handleButtonClicktwo}>
                                     <Text style={{ fontFamily: 'mainFont', fontSize: 11, width: '100%', textAlign: 'center', color: 'white' }}>Deactivate</Text>
                                 </TouchableOpacity>
                             </TouchableOpacity>
+
+                            <TouchableOpacity style={{ width: '30%' }} >
+                                <TouchableOpacity style={{ width: '100%', backgroundColor: '#233CBF', padding: 10, borderRadius: 5 }}  onPress={() => navigation.navigate("Adrawernavigation")}>
+                                    <Text style={{ fontFamily: 'mainFont', fontSize: 11, width: '100%', textAlign: 'center', color: 'white' }}>Save</Text>
+                                </TouchableOpacity>
+                            </TouchableOpacity>
+
                         </View>
                     </View>
                 </View>

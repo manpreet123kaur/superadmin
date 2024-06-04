@@ -6,10 +6,9 @@ const Leaveshr = ({ navigation }) => {
     return (
         <>
             <ScrollView>
-                <View style={{backgroundColor:'white'}}>
-            
+                <View style={{backgroundColor:'#e1e5ff'}}>
                     <View style={{ width: '96%', alignSelf: 'center', padding: 10 }}>
-                        <TouchableOpacity style={{ flexDirection: 'row', width: "90%", alignSelf: 'center', padding: 10, backgroundColor: 'white', borderWidth: 1, margin: 8, borderColor: 'lightgrey', borderRadius: 12 }} onPress={() => navigation.navigate("Appliedleaves")}>
+                        <TouchableOpacity style={{ flexDirection: 'row', width: "90%", alignSelf: 'center', padding: 10, backgroundColor: 'white', borderWidth: 1, margin: 8, borderColor: 'lightgrey', borderRadius: 12 }} onPress={() => navigation.navigate("Appliedleave")}>
                             <View style={{ width: '72%' }}>
                                 <Text style={{ fontSize: 14, fontFamily: 'mainFont', color: 'grey' }}>Manisha</Text>
                                 <Text style={{ fontSize: 14, fontFamily: 'mainFont', color: 'grey' }}>Sick Leave</Text>
@@ -17,7 +16,7 @@ const Leaveshr = ({ navigation }) => {
                             </View>
                         </TouchableOpacity>
 
-                        <TouchableOpacity style={{ flexDirection: 'row', width: "90%", alignSelf: 'center', padding: 10, backgroundColor: 'white', borderWidth: 1, margin: 8, borderColor: 'lightgrey', borderRadius: 12 }} onPress={() => navigation.navigate("Appliedleaves")}>
+                        <TouchableOpacity style={{ flexDirection: 'row', width: "90%", alignSelf: 'center', padding: 10, backgroundColor: 'white', borderWidth: 1, margin: 8, borderColor: 'lightgrey', borderRadius: 12 }} onPress={() => navigation.navigate("Appliedleave")}>
                             <View style={{ width: '72%' }}>
                                 <Text style={{ fontSize: 14, fontFamily: 'mainFont', color: 'grey' }}>jashan</Text>
                                 <Text style={{ fontSize: 14, fontFamily: 'mainFont', color: 'grey' }}>Sick Leave</Text>
