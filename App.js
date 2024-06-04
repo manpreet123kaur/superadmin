@@ -116,30 +116,30 @@ export default function App() {
         <Stack.Screen name='Performance' component={Performance} />
         <Stack.Screen name='Adminsprofile' component={Adminsprofile} />  */}
         {/* hr  */}
-        {/* <Stack.Screen name='DrawernavigationH' component={DrawernavigationH} />
-          <Stack.Screen name='Homehr' component={Homehr} />
-          <Stack.Screen name='Users' component={UsersH} />
-          <Stack.Screen name='Addnewuser' component={Addnewuser} />
-          <Stack.Screen name='Employeesprofile' component={Employeesprofile} />
-          <Stack.Screen name='Workmanagment' component={Workmanagment} />
-          <Stack.Screen name='Performancecalculator' component={Performancecalculator} />
-          <Stack.Screen name='PerformanceH' component={PerformanceH} />
-          <Stack.Screen name='Recruitment' component={Recruitment} />
-          <Stack.Screen name='Leaveshr' component={Leaveshr} />
-          <Stack.Screen name='Appliedleave' component={Appliedleave} />
-          <Stack.Screen name='Interviewschedule' component={Interviewschedule} />
-          <Stack.Screen name='Recentvacany' component={Recentvacany} />
-          <Stack.Screen name='Frontendvacanies' component={Frontendvacanies} />
-          <Stack.Screen name='SCOvacancy' component={SCOvacancy} />
-          <Stack.Screen name='Digitalmarket' component={Digitalmarket} />
-          <Stack.Screen name='Graphicdsign' component={Graphicdsign} />
-          <Stack.Screen name='Backend' component={Backend} />
-          <Stack.Screen name='Software' component={Software} />
-          <Stack.Screen name='Videoediting' component={Videoediting} />
-          <Stack.Screen name='Reports' component={Reports} />
-          <Stack.Screen name='LeaveStatus' component={LeaveStatus} />
-          <Stack.Screen name='AddinterviewH' component={AddinterviewH} />
-          <Stack.Screen name='Humanresource' component={Humanresource} /> */}
+        <Stack.Screen name='DrawernavigationH' component={DrawernavigationH} />
+        <Stack.Screen name='Homehr' component={Homehr} />
+        <Stack.Screen name='Users' component={UsersH} />
+        <Stack.Screen name='Addnewuser' component={Addnewuser} />
+        <Stack.Screen name='Employeesprofile' component={Employeesprofile} />
+        <Stack.Screen name='Workmanagment' component={Workmanagment} />
+        <Stack.Screen name='Performancecalculator' component={Performancecalculator} />
+        <Stack.Screen name='PerformanceH' component={PerformanceH} />
+        <Stack.Screen name='Recruitment' component={Recruitment} />
+        <Stack.Screen name='Leaveshr' component={Leaveshr} />
+        <Stack.Screen name='Appliedleave' component={Appliedleave} />
+        <Stack.Screen name='Interviewschedule' component={Interviewschedule} />
+        <Stack.Screen name='Recentvacany' component={Recentvacany} />
+        <Stack.Screen name='Frontendvacanies' component={Frontendvacanies} />
+        <Stack.Screen name='SCOvacancy' component={SCOvacancy} />
+        <Stack.Screen name='Digitalmarket' component={Digitalmarket} />
+        <Stack.Screen name='Graphicdsign' component={Graphicdsign} />
+        <Stack.Screen name='Backend' component={Backend} />
+        <Stack.Screen name='Software' component={Software} />
+        <Stack.Screen name='Videoediting' component={Videoediting} />
+        <Stack.Screen name='Reports' component={Reports} />
+        <Stack.Screen name='LeaveStatus' component={LeaveStatus} />
+        <Stack.Screen name='AddinterviewH' component={AddinterviewH} />
+        <Stack.Screen name='Humanresource' component={Humanresource} />
         {/* User  */}
         {/* <Stack.Screen name='DrawernavigationU' component={DrawernavigationU} />
         <Stack.Screen name='Employeehome' component={Employeehome} />
@@ -155,4 +155,4 @@ export default function App() {
 
 AppRegistry.registerComponent('YourAppName', () => App);
 
-console.log("git testing")
+// console.log("git testing")
