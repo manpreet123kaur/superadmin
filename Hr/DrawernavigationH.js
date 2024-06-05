@@ -4,15 +4,19 @@ import { Button, View, Text, Image, TouchableOpacity, Modal } from 'react-native
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItemList } from "@react-navigation/drawer";
 import { NavigationContainer } from '@react-navigation/native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faHouseUser, faUsersBetweenLines, faEllipsisVertical, faLaptopFile, faChartColumn, faListCheck, faLayerGroup, faToggleOff, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { faHouseUser, faUsersBetweenLines, faCalendarCheck, faLaptopFile, faChartColumn, faListCheck, faLayerGroup, faToggleOff, faPowerOff, faClipboardUser ,faAddressCard} from '@fortawesome/free-solid-svg-icons';
 
 import Homehr from './Homehr';
-import UsersH from './UsersH';
+import EmployeeH from './EmployeeH';
 import Workmanagment from './Workmanagment';
 import Performancecalculator from './Performancecalculator';
 import Recruitment from './Recruitment';
 import Reports from './Reports';
 import Leaveshr from './Leaveshr';
+import HolidayH from './HolidayH';
+import AttendenceH from './AttendenceH';
+import Teamangemant from './Teamangemant';
+import ViewprofileH from './ViewprofileH';
 
 const Drawer = createDrawerNavigator();
 const CustomDrawer = (props) => {
@@ -39,7 +43,7 @@ const CustomDrawer = (props) => {
                     <Text style={{ fontFamily: "mainFont", marginTop: 0, fontSize: 14, }}>Jessica12@gmail.com</Text>
                 </View>
                 <DrawerItemList {...props} />
-                <TouchableOpacity style={{ marginTop: 160, padding: 10, backgroundColor: '#233CBF', flexDirection: 'row', alignItems: 'center' }} onPress={handlechanepassword}>
+                <TouchableOpacity style={{ padding: 10, backgroundColor: '#233CBF', flexDirection: 'row', alignItems: 'center' }} onPress={handlechanepassword}>
                     <Text style={{ color: 'white', fontSize: 16, fontWeight: 700, fontFamily: "mainFont", padding: 7, width: '80%' }}>Logout</Text>
                     <FontAwesomeIcon color='white' size={20} style={{ marginLeft: 20 }} icon={faPowerOff} />
                 </TouchableOpacity>
@@ -73,12 +77,16 @@ export default function App() {
 
             <Drawer.Navigator screenOptions={{ headerShown: true, activeTintColor: 'pink', drawerActiveBackgroundColor: "#233CBF", drawerActiveTintColor: "white" }} drawerContent={(props) => (<CustomDrawer {...props} />)}>
                 <Drawer.Screen name="HR" component={Homehr} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faHouseUser} size={20} color={color} />), }} />
-                <Drawer.Screen name="Employees Detail" component={UsersH} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faUsersBetweenLines} size={20} color={color} />), }} />
+                <Drawer.Screen name="Employees" component={EmployeeH} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faUsersBetweenLines} size={20} color={color} />), }} />
                 <Drawer.Screen name="Work Management" component={Workmanagment} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faLaptopFile} size={20} color={color} />), }} />
-                <Drawer.Screen name="Performance Calculator" component={Performancecalculator} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faChartColumn} size={20} color={color} />), }} />
+                <Drawer.Screen name="Performance" component={Performancecalculator} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faChartColumn} size={20} color={color} />), }} />
                 <Drawer.Screen name="Recruitment" component={Recruitment} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faListCheck} size={20} color={color} />), }} />
                 <Drawer.Screen name="Reports" component={Reports} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faLayerGroup} size={20} color={color} />), }} />
                 <Drawer.Screen name="Leave" component={Leaveshr} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faToggleOff} size={20} color={color} />), }} />
+                <Drawer.Screen name="Holiday Schedule" component={HolidayH} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faCalendarCheck} size={20} color={color} />), }} />
+                <Drawer.Screen name="Attendence" component={AttendenceH} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faClipboardUser} size={20} color={color} />), }} />
+                <Drawer.Screen name="Team Management" component={Teamangemant} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faUsersBetweenLines} size={20} color={color} />), }} />
+                <Drawer.Screen name="View Profile" component={ViewprofileH} options={{ drawerIcon: ({ color }) => (<FontAwesomeIcon icon={faAddressCard} size={20} color={color} />), }} />
             </Drawer.Navigator>
         </>
     );

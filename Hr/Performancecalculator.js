@@ -30,7 +30,7 @@ const Performancecalculator = ({ navigation }) => {
                 <View style={{ width: '53%' }}>
                     <Text style={{ fontFamily: 'mainFont', textAlign: 'center', padding: 10, fontSize: 15, width: '100%' }}>{item.email}</Text>
                 </View>
-                <TouchableOpacity style={{ width: '17%', alignItems: 'flex-end' }} onPress={() => navigation.navigate("Performance")}>
+                <TouchableOpacity style={{ width: '17%', alignItems: 'flex-end' }} onPress={() => navigation.navigate("PerformanceH")}>
                     <FontAwesomeIcon size={18} style={{ marginTop: 10 }} icon={faEllipsis} />
                 </TouchableOpacity>
             </View>

@@ -78,7 +78,7 @@ const Signup = ({ navigation }) => {
 
         if (validateForm()) {
             try {
-                const response = await fetch("https://trackingtime-c5jw.onrender.com/api/user/sign-up", {
+                const response = await fetch("https://trackingtime-c5jw.onrender.com/api/admin/signup", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -146,8 +146,6 @@ const Signup = ({ navigation }) => {
                                 </TouchableOpacity>
                             </View>
                             {errors.password && <Text style={{ color: 'red', marginLeft: 40, fontFamily: 'mainFont' }}>{errors.password}</Text>}
-
-
 
                             <View style={{ flexDirection: 'row', alignItems: "center", borderColor: '#5E73E4', borderWidth: 1, width: '80%', alignSelf: 'center', padding: 9, borderRadius: 12, marginTop: 12 }}>
                                 <FontAwesomeIcon color={'grey'} icon={faLock} />

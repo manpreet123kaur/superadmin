@@ -1,10 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { useFonts } from "expo-font";
-import { Text, TouchableOpacity, View, Image, TextInput, ScrollView, Modal } from 'react-native';
+import React, { useState, useEffect } from 'react';;
+import { Button, View, Text, Image, TouchableOpacity, ScrollView, TextInput, Modal } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faArrowLeftLong, faSquareXmark, faQuestion, faArrowLeft, faEye, faSquareCheck } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faSquareCheck, faSquareXmark } from '@fortawesome/free-solid-svg-icons';
+import { useFonts } from "expo-font";
 
-const Appliedleave = ({ navigation }) => {
+const LeaveT = ({ navigation }) => {
+    const [fontsLoaded] = useFonts({
+        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+    });
+    if (!fontsLoaded) {
+        return <Text>Loading...</Text>;
+    }
+
     const [isModalVisible, setIsModalVisible] = useState(false);
     const handleButtonClick = () => {
         setIsModalVisible(!isModalVisible);
@@ -28,16 +35,15 @@ const Appliedleave = ({ navigation }) => {
             setrejectreason(false);
         }, 2000);
     };
-    
     return (
         <>
             <ScrollView>
                 <View style={{ width: '100%', paddingBottom: 20, backgroundColor: 'white' }}>
-                    <View style={{ flexDirection: 'row', marginTop: 55, width: '100%', marginBottom: 40 }}>
-                        <TouchableOpacity style={{ paddingLeft: 20, width: '10%' }} onPress={() => navigation.navigate("DrawernavigationH")}>
-                            <FontAwesomeIcon style={{ width: '15%' }} color='#233CBF' size={22} icon={faArrowLeftLong} />
+                    <View style={{ flexDirection: 'row', marginTop: 35, width: '90%', marginBottom: 40, alignSelf: 'center' }}>
+                        <TouchableOpacity style={{ width: '5%' }} onPress={() => navigation.navigate("DrawernavigationT")}>
+                            <FontAwesomeIcon style={{ width: '15%' }} color='#233CBF' size={22} icon={faAngleLeft} />
                         </TouchableOpacity>
-                        <View style={{ width: '85%' }}>
+                        <View style={{ width: '90%' }}>
                             <Text style={{ color: "#233CBF", textAlign: 'center', fontSize: 22, fontFamily: 'mainFont' }}>Applied Leave</Text>
                             <Text style={{ fontFamily: 'mainFont', fontSize: 12, textAlign: 'center' }}>You have been requested to review the following:</Text>
                         </View>
@@ -80,13 +86,11 @@ const Appliedleave = ({ navigation }) => {
                         <TouchableOpacity style={{ backgroundColor: "green", width: '40%', padding: 12, borderRadius: 6, marginRight: 10 }} onPress={handleButtonClick}>
                             <Text style={{ fontFamily: 'mainFont', fontSize: 14, color: 'white', textAlign: 'center' }}>Approve</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={{ backgroundColor: 'white', width: '40%', padding: 11, borderRadius: 6, marginRight: 10, borderWidth: 1, borderColor: "#ff6a71" }}>
-                            <Text style={{ fontFamily: 'mainFont', fontSize: 14, color: '#ff6a71', textAlign: 'center' }} onPress={handlerejectbutton}>Reject</Text>
+                        <TouchableOpacity style={{ backgroundColor: 'white', width: '40%', padding: 11, borderRadius: 6, marginRight: 10, borderWidth: 1, borderColor: "red" }}>
+                            <Text style={{ fontFamily: 'mainFont', fontSize: 14, color: 'red', textAlign: 'center' }} onPress={handlerejectbutton}>Reject</Text>
                         </TouchableOpacity>
                     </View>
-                    <TouchableOpacity onPress={handlerejectreasonbutton}>
-                        <Text style={{ width: "100%", flex: 1, textAlign: 'right', padding: 10, fontFamily: 'mainFont' }}>Reason for rejection..?</Text>
-                    </TouchableOpacity>
+
                 </View>
             </ScrollView>
             <Modal animationType="slide" transparent={true} visible={isModalVisible} onRequestClose={() => setIsModalVisible(false)}>
@@ -99,26 +103,14 @@ const Appliedleave = ({ navigation }) => {
             </Modal>
             <Modal animationType="slide" transparent={true} visible={Reject} onRequestClose={() => setreject(false)}>
                 <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                    <View style={{ backgroundColor: '#ff6a71', borderRadius: 10, padding: 20, alignItems: 'center', elevation: 5 }}>
+                    <View style={{ backgroundColor: 'red', borderRadius: 10, padding: 20, alignItems: 'center', elevation: 5 }}>
                         <FontAwesomeIcon size={20} color='white' icon={faSquareXmark} />
                         <Text style={{ padding: 10, fontFamily: 'mainFont', fontSize: 17, width: '100%', textAlign: 'center', color: 'white' }}>Rejected</Text>
                     </View>
-                </View>
-            </Modal>
-            <Modal animationType="slide" transparent={true} visible={Rejectreason} onRequestClose={() => setrejectreason(false)}>
-                <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-                    <View style={{ backgroundColor: '#233CBF', borderRadius: 10, padding: 20, alignItems: 'center', elevation: 5, width: '70%' }}>
-                        <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-                            <FontAwesomeIcon size={20} color='white' icon={faQuestion} />
-                            <Text style={{ padding: 0, fontFamily: 'mainFont', fontSize: 20, width: '100%', textAlign: 'center', color: 'white' }}>Reason for rejection</Text>
-                        </View>
-                        <Text style={{ padding: 10, fontSize: 12, width: '100%', textAlign: 'center', color: 'white' }}>I regret to inform you that I cannot approve your leave of absence at this time.</Text>
-                    </View>
-
                 </View>
             </Modal>
         </>
     )
 }
 
-export default Appliedleave;
+export default LeaveT;

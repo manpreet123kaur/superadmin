@@ -61,13 +61,13 @@ const Login = ({ navigation }) => {
                             console.log("Hr");
                             navigation.navigate("DrawernavigationH");
                             break;
+                        case 'TL':
+                            console.log("TL");
+                            navigation.navigate("DrawernavigationT");
+                            break;
                         case 'user':
                             console.log("user");
                             navigation.navigate("DrawernavigationU");
-                            break;
-                        case 'TL':
-                            console.log("TL");
-                            navigation.navigate("Drawrnavigationfortl");
                             break;
                         default:
                             console.warn('Unknown user role:', data.data.user.role);

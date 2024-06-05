@@ -4,7 +4,7 @@ import { Text, View, Image, TouchableOpacity, ScrollView, Modal,TextInput, Alert
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faTriangleExclamation, faTrash, faEye } from '@fortawesome/free-solid-svg-icons';
 
-const UsersH = ({ navigation }) => {
+const EmployeeH = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
         mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
     });
@@ -50,7 +50,7 @@ const UsersH = ({ navigation }) => {
                             <Text style={{ fontFamily: 'mainFont', padding: 10, fontSize: 13, width: '100%', textAlign: 'center', fontWeight: "700" }}>abc@example.com</Text>
                         </View>
                         <View style={{ width: '17%', flexDirection: 'row', alignItems: 'center' }}>
-                            <TouchableOpacity onPress={() => navigation.navigate("Adminprofile")}>
+                            <TouchableOpacity onPress={() => navigation.navigate("Employeesprofile")}>
                                 <FontAwesomeIcon style={{ margin: 15 }} icon={faEye} />
                             </TouchableOpacity>
                             <TouchableOpacity onPress={handleButtonClick}>
@@ -67,7 +67,7 @@ const UsersH = ({ navigation }) => {
                             <Text style={{ fontFamily: 'mainFont', padding: 10, fontSize: 13, width: '100%', textAlign: 'center', fontWeight: "700" }}>abc@example.com</Text>
                         </View>
                         <View style={{ width: '17%', flexDirection: 'row', alignItems: 'center' }}>
-                            <TouchableOpacity onPress={() => navigation.navigate("Adminprofile")}>
+                            <TouchableOpacity onPress={() => navigation.navigate("Employeesprofile")}>
                                 <FontAwesomeIcon style={{ margin: 15 }} icon={faEye} />
                             </TouchableOpacity>
                             <TouchableOpacity onPress={handleButtonClick}>
@@ -131,4 +131,4 @@ const UsersH = ({ navigation }) => {
         </>
     );
 };
-export default UsersH;
+export default EmployeeH;

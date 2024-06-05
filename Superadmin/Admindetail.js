@@ -39,9 +39,9 @@ const Admindetail = ({ navigation }) => {
         <>
 
             <View style={{ height: '100%', backgroundColor: 'white' }}>
-                <View style={{ width: '40%', alignSelf: "flex-end" }}>
+                <View style={{ width: '32%', alignSelf: "flex-end" }}>
                     <TouchableOpacity style={{ marginRight: 15, marginBottom: 15 }} onPress={handleButtonClicktwo}>
-                        <Text style={{ fontFamily: 'mainFont', color: 'white', backgroundColor: '#233CBF', padding: 6, borderRadius: 6, textAlign: 'center', fontSize: 12 }}>Add New Users</Text>
+                        <Text style={{ fontFamily: 'mainFont', color: 'white', backgroundColor: '#233CBF', padding: 8, borderRadius: 6, textAlign: 'center', fontSize: 12 }}>Add New Users</Text>
                     </TouchableOpacity>
                 </View>
 

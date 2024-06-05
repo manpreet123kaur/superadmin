@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useFonts } from "expo-font";
-import { Text, View, Image, TouchableOpacity, ScrollView, Button } from 'react-native'
+import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUsers, faCircleUser } from '@fortawesome/free-solid-svg-icons';
 
-const Homehr = ({ navigation }) => {
+const Teamleaderhome = ({ navigation }) => {
+
     const [fontsLoaded] = useFonts({
         mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
     });
@@ -13,8 +14,7 @@ const Homehr = ({ navigation }) => {
     }
     return (
         <>
-
-            <ScrollView style={{ backgroundColor: 'white' }}>
+           <ScrollView style={{ backgroundColor: 'white' }}>
                 <View style={{ flexDirection: "row", alignItems: 'center', alignSelf: 'center', marginTop: 20 }}>
                     <View style={{ width: '45%', backgroundColor: '#d2ffdd', borderRadius: 8, margin: 8, padding: 8, borderWidth: 1, borderRightWidth: 2 }}>
                         <Text style={{ fontWeight: '700', fontFamily: 'mainFont' }}>Employees</Text>
@@ -85,9 +85,8 @@ const Homehr = ({ navigation }) => {
                     </View>
                 </View>
             </ScrollView>
-
         </>
     )
 }
 
-export default Homehr;
+export default Teamleaderhome;

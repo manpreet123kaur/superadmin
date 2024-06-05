@@ -3,6 +3,7 @@ import { useFonts } from "expo-font";
 import { Text, TouchableOpacity, View, Image, ScrollView } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faArrowLeftLong, faEnvelope, faLock, faArrowLeft, faEye, faEllipsis } from '@fortawesome/free-solid-svg-icons';
+import * as Progress from 'react-native-progress';
 
 const PerformanceH = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
@@ -35,8 +36,8 @@ const PerformanceH = ({ navigation }) => {
                     </View>
                 </View>
             </View>
-            <View style={{ width: '85%', margin: 30, alignItems: 'center' }}>
-               
+            <View style={{ margin: 20, alignItems: 'center' }}>
+                <Progress.Pie progress={0.4} size={80} />
                 <Text style={{ fontFamily: 'mainFont', fontSize: 12, textAlign: 'center', color: 'grey', padding: 15 }}>The overall progess of this month 63%</Text>
             </View>
 
