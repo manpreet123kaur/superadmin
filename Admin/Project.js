@@ -6,7 +6,7 @@ import { faArrowLeftLong, faPlus, faLock, faArrowLeft, faEye, faAddressBook } fr
 
 const Project = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -18,7 +18,7 @@ const Project = ({ navigation }) => {
                     <TouchableOpacity style={{ flexDirection: 'row', width: '93%', alignSelf: "center", padding: 15, alignItems: 'center', borderWidth: 1, borderRadius: 10, marginTop: 40, borderColor: 'lightgrey', borderBottomWidth: 3, marginBottom: 4 }}>
                         <View>
                             <View style={{ width: 85, height: 60 }}>
-                                <Image style={{ width: '100%', height: '100%', borderRadius: 8 }} source={require("../pages/assests/images/vector.jpg")} />
+                                <Image style={{ width: '100%', height: '100%', borderRadius: 8 }} source={require("../assets/images/vector.jpg")} />
                             </View>
                         </View>
                         <View style={{ margin: 10 }}>
@@ -30,7 +30,7 @@ const Project = ({ navigation }) => {
                     <TouchableOpacity style={{ flexDirection: 'row', width: '93%', alignSelf: "center", padding: 15, alignItems: "flex-end", borderWidth: 1, borderRadius: 10, borderColor: 'lightgrey', borderBottomWidth: 3, margin: 6 }}>
                         <View>
                             <View style={{ width: 85, height: 60 }}>
-                                <Image style={{ width: '100%', height: '100%', borderRadius: 8 }} source={require("../pages/assests/images/attendence.jpg")} />
+                                <Image style={{ width: '100%', height: '100%', borderRadius: 8 }} source={require("../assets/images/attendence.jpg")} />
                             </View>
                         </View>
                         <View style={{ margin: 10 }}>
@@ -42,7 +42,7 @@ const Project = ({ navigation }) => {
                     <TouchableOpacity style={{ flexDirection: 'row', width: '93%', alignSelf: "center", padding: 15, alignItems: 'center', borderWidth: 1, borderRadius: 10, borderColor: 'lightgrey', borderBottomWidth: 3, margin: 5 }}>
                         <View>
                             <View style={{ width: 85, height: 60 }}>
-                                <Image style={{ width: '100%', height: '100%', borderRadius: 8 }} source={require("../pages/assests/images/vector.jpg")} />
+                                <Image style={{ width: '100%', height: '100%', borderRadius: 8 }} source={require("../assets/images/vector.jpg")} />
                             </View>
                         </View>
                         <View style={{ margin: 10 }}>
@@ -54,7 +54,7 @@ const Project = ({ navigation }) => {
                     <TouchableOpacity style={{ flexDirection: 'row', width: '93%', alignSelf: "center", padding: 15, alignItems: 'center', borderWidth: 1, borderRadius: 10, borderColor: 'lightgrey', borderBottomWidth: 3, margin: 5 }}>
                         <View>
                             <View style={{ width: 85, height: 60 }}>
-                                <Image style={{ width: '100%', height: '100%', borderRadius: 8 }} source={require("../pages/assests/images/attendence.jpg")} />
+                                <Image style={{ width: '100%', height: '100%', borderRadius: 8 }} source={require("../assets/images/attendence.jpg")} />
                             </View>
                         </View>
                         <View style={{ margin: 10 }}>

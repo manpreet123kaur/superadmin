@@ -3,7 +3,6 @@ import { useFonts } from "expo-font";
 import { Text, View, TouchableOpacity, ScrollView, Image ,Modal,TextInput} from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faCalendar, faPlus, faTrashCan ,faTriangleExclamation} from '@fortawesome/free-solid-svg-icons';
-import DateTimePicker from '@react-native-community/datetimepicker';
 
 const Holidays = ({ navigation }) => {
     const [date, setDate] = useState(new Date());
@@ -15,7 +14,7 @@ const Holidays = ({ navigation }) => {
     const [calendar, setCalendar] = useState(false);
 
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -49,7 +48,7 @@ const Holidays = ({ navigation }) => {
             <ScrollView>
                 <View style={{ height: '100%', backgroundColor: 'white' }}>
                     <View style={{ width: 373, height: 300, alignSelf: 'center' }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/holidaypichture.jpg")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/holidaypichture.jpg")} />
                     </View>
                     <View style={{ backgroundColor: 'white', alignSelf: 'center', width: '92%', borderRadius: 20, padding: 20, marginTop: -20, borderWidth: 1, borderColor: '#1e49ca', borderBottomWidth: 4 }}>
                         <View>

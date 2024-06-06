@@ -6,7 +6,7 @@ import { useFonts } from "expo-font";
 
 const AAtendence = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")   
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -23,7 +23,7 @@ const AAtendence = ({ navigation }) => {
 
                     <View style={{ paddingTop: 20 }}>
                         <View style={{ width: 300, height: 300, alignSelf: 'center' }}>
-                            <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/adminattenddence.png")} />
+                            <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/adminattenddence.png")} />
                         </View>
                         <View style={{ flexDirection: 'row', alignItems: 'center', alignSelf: 'center' }}>
                             <TouchableOpacity style={{ width: '40%', margin: 10, backgroundColor: '#ffbddd', padding: 20, borderRadius: 12, borderWidth: 1, borderColor: 'lightgrey', borderBottomWidth: 3 }} onPress={() => navigation.navigate("Totalemployee")}>

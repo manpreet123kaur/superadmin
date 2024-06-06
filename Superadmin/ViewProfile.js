@@ -7,7 +7,7 @@ import { SelectList } from 'react-native-dropdown-select-list'
 
 const ViewProfile = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf") 
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -18,7 +18,7 @@ const ViewProfile = ({ navigation }) => {
             <ScrollView style={{ backgroundColor: 'white' }}>
                 <View style={{ alignSelf: 'center', marginTop: 30, backgroundColor: 'white' }}>
                     <View style={{ width: 100, height: 100, borderRadius: 100 }}>
-                        <Image style={{ width: '100%', height: '100%', borderRadius: 100, borderWidth: 1, borderColor: 'black' }} source={require("../pages/assests/images/kaviya.png")} />
+                        <Image style={{ width: '100%', height: '100%', borderRadius: 100, borderWidth: 1, borderColor: 'black' }} source={require("../assets/images/kaviya.png")} />
                     </View>
                     <Text style={{ fontSize: 20, fontFamily: 'mainFont', fontWeight: 700 }}>Jasmeet kaur</Text>
                     <Text style={{ fontSize: 13, fontFamily: 'mainFont' }}>jasmeet@gmail.com</Text>

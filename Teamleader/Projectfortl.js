@@ -6,7 +6,7 @@ import { faArrowLeftLong, faEnvelope, faLock, faArrowLeft, faEye, faEllipsis } f
 
 const Projectfortl = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf") 
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -16,13 +16,13 @@ const Projectfortl = ({ navigation }) => {
             <TouchableOpacity style={{ width: '90%', alignSelf: 'center', borderWidth: 1, borderColor: 'lightgrey', borderRadius: 30, padding: 15, margin: 10, marginTop: 30, borderBottomWidth: 4 }} onPress={() => navigation.navigate("Projectpersons")}>
                 <View style={{ flexDirection: 'row' }} >
                     <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderRadius: 20, marginLeft: 12 }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                     </View>
                     <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderRadius: 20, marginLeft: -15 }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                     </View>
                     <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderRadius: 20, marginLeft: -15 }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                     </View>
                 </View>
                 <View>
@@ -35,13 +35,13 @@ const Projectfortl = ({ navigation }) => {
             <TouchableOpacity style={{ width: '90%', alignSelf: 'center', borderWidth: 1, borderColor: 'lightgrey', borderRadius: 30, padding: 15, margin: 10, borderBottomWidth: 4 }} onPress={() => navigation.navigate("Projectpersons")}>
                 <View style={{ flexDirection: 'row' }} >
                     <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderRadius: 20, marginLeft: 12 }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                     </View>
                     <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderRadius: 20, marginLeft: -15 }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                     </View>
                     <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderRadius: 20, marginLeft: -15 }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                     </View>
                 </View>
                 <View>

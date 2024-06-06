@@ -7,7 +7,7 @@ import { LineChart } from 'react-native-chart-kit';
 
 const Expense = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")   
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -20,7 +20,7 @@ const Expense = ({ navigation }) => {
                     <View style={{ flexDirection: 'row', alignItems: 'center', padding: 5, width: '100%' }}>
                         <Text style={{ fontWeight: 700, fontSize: 18, fontFamily: 'mainFont', width: '80%' }}>$56500</Text>
                         <View style={{ width: 70, height: 32 }}>
-                            <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/greenbar.png")} />
+                            <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/greenbar.png")} />
                         </View>
                     </View>
                     <Text style={{ color: 'grey', fontWeight: 700, fontSize: 18, fontFamily: 'mainFont', color: '#34801A', padding: 5 }}>+19%</Text>
@@ -31,7 +31,7 @@ const Expense = ({ navigation }) => {
                     <View style={{ flexDirection: 'row', alignItems: 'center', padding: 5, width: '100%' }}>
                         <Text style={{ fontWeight: 700, fontSize: 18, fontFamily: 'mainFont', width: '80%' }}>$56500</Text>
                         <View style={{ width: 70, height: 32 }}>
-                            <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/purplebar.png")} />
+                            <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/purplebar.png")} />
                         </View>
                     </View>
                     <Text style={{ color: 'grey', fontWeight: 700, fontSize: 18, fontFamily: 'mainFont', color: '#34801A', padding: 5 }}>+19%</Text>
@@ -42,7 +42,7 @@ const Expense = ({ navigation }) => {
                     <View style={{ flexDirection: 'row', alignItems: 'center', padding: 5, width: '100%' }}>
                         <Text style={{ fontWeight: 700, fontSize: 18, fontFamily: 'mainFont', width: '80%' }}>$56500</Text>
                         <View style={{ width: 70, height: 32 }}>
-                            <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/pinkbar.png")} />
+                            <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/pinkbar.png")} />
                         </View>
                     </View>
                     <Text style={{ color: 'grey', fontWeight: 700, fontSize: 18, fontFamily: 'mainFont', color: '#34801A', padding: 5 }}>+19%</Text>

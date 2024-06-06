@@ -8,7 +8,7 @@ import * as Progress from 'react-native-progress';
 const Employeeprogessfortl = ({ navigation }) => {
 
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -35,7 +35,7 @@ const Employeeprogessfortl = ({ navigation }) => {
                     <View style={{ padding: 10, marginTop: 10, width: '90%', alignSelf: 'center' }}>
                         <Text style={{ fontSize: 18, color: '#233CBF', fontFamily: 'mainFont' }}>Employee Detail</Text>
                         <View style={{ width: 80, height: 80, margin: 10, borderWidth: 1, padding: 10, borderColor: "lightgrey" }}>
-                            <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                            <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                         </View>
                     </View>
                     <View style={{ width: '90%', padding: 10, alignSelf: 'center', borderWidth: 1, borderColor: "lightgrey", borderRadius: 12 }}>

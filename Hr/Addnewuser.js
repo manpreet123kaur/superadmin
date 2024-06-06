@@ -2,11 +2,11 @@ import React from 'react';
 import { useFonts } from "expo-font";
 import { Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faArrowLeftLong, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Addnewuser = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;

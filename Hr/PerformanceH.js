@@ -2,16 +2,17 @@ import React from 'react';
 import { useFonts } from "expo-font";
 import { Text, TouchableOpacity, View, Image, ScrollView } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faArrowLeftLong, faEnvelope, faLock, faArrowLeft, faEye, faEllipsis } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import * as Progress from 'react-native-progress';
 
 const PerformanceH = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
     }
+    
     return (
         <>
             <View>

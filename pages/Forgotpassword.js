@@ -24,7 +24,7 @@ const Forgotpassword = ({ navigation }) => {
 
 
         const [fontsLoaded] = useFonts({
-            mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+            mainFont: require("../assets/fonts/Metropolis-Medium.otf")
         });
         if (!fontsLoaded) {
             return <Text>Loading...</Text>;
@@ -40,7 +40,7 @@ const Forgotpassword = ({ navigation }) => {
                     <Text style={{ fontFamily: 'mainFont', fontSize: 20, textAlign: 'center', color: '#233CBF' }}>Forgotpassword</Text>
                 </View>
                 <View style={{ width: 200, height: 200, alignSelf: 'center', marginTop: 40 }}>
-                    {/* <Image style={{ width: "100%", height: "100%", borderRadius: 20 }} source={require('./assets/images/forgotpassword.png')} /> */}
+                    <Image style={{ width: "100%", height: "100%", borderRadius: 20 }} source={require('../assets/images/forgotpassword.png')} />
                 </View>
                 <View style={{ marginTop: 30, width: '90%', alignSelf: 'center', padding: 15 }}>
                     <Text style={{ fontFamily: 'mainFont', fontSize: 18, color: '#233CBF' }}>Mail Address Here</Text>

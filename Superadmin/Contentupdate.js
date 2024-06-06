@@ -12,7 +12,7 @@ const Contentupdate = ({ navigation }) => {
     };
 
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf") 
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -23,7 +23,7 @@ const Contentupdate = ({ navigation }) => {
             <ScrollView>
                 <View style={{ backgroundColor: 'white', width: '100%', height: 700 }}>
                     <View style={{ width: 380, height: 200, alignSelf: 'center' }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/aboutus.jpg")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/aboutus.jpg")} />
                     </View>
                     <View style={{ width: '100%', alignSelf: 'center', padding: 14, paddingTop: 60 }}>
                         <Text style={{ fontFamily: 'mainFont', fontSize: 16, marginLeft: 10, fontWeight: "500", padding: 5 }}>Post Title : </Text>

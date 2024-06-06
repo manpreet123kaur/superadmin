@@ -7,7 +7,7 @@ import * as Progress from 'react-native-progress';
 
 const TeamdetailH = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")
     });
 
     if (!fontsLoaded) {
@@ -49,7 +49,7 @@ const TeamdetailH = ({ navigation }) => {
                         <TouchableOpacity style={{ flexDirection: "row", alignItems: 'center', width: '100%', padding: 10, borderWidth: 1, borderRadius: 8, borderColor: 'lightgrey', marginTop: 8 }} onPress={() => navigation.navigate("UserprofileH")}>
                             <View style={{ width: '20%' }}>
                                 <View style={{ width: 45, height: 45 }}>
-                                    <Image style={{ width: "100%", height: "100%", borderRadius: 45 }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: "100%", height: "100%", borderRadius: 45 }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                             </View>
                             <View style={{ width: '80%' }}>
@@ -61,7 +61,7 @@ const TeamdetailH = ({ navigation }) => {
                         <TouchableOpacity style={{ flexDirection: "row", alignItems: 'center', width: '100%', padding: 10, borderWidth: 1, borderRadius: 8, borderColor: 'lightgrey', marginTop: 8 }} onPress={() => navigation.navigate("UserprofileH")}>
                             <View style={{ width: '20%' }}>
                                 <View style={{ width: 45, height: 45 }}>
-                                    <Image style={{ width: "100%", height: "100%", borderRadius: 45 }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: "100%", height: "100%", borderRadius: 45 }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                             </View>
                             <View style={{ width: '80%' }}>
@@ -73,7 +73,7 @@ const TeamdetailH = ({ navigation }) => {
                         <TouchableOpacity style={{ flexDirection: "row", alignItems: 'center', width: '100%', padding: 10, borderWidth: 1, borderRadius: 8, borderColor: 'lightgrey', marginTop: 8 }} onPress={() => navigation.navigate("UserprofileH")}>
                             <View style={{ width: '20%' }}>
                                 <View style={{ width: 45, height: 45 }}>
-                                    <Image style={{ width: "100%", height: "100%", borderRadius: 45 }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: "100%", height: "100%", borderRadius: 45 }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                             </View>
                             <View style={{ width: '80%' }}>

@@ -3,7 +3,6 @@ import { useFonts } from "expo-font";
 import { Text, View, Image, TouchableOpacity, ScrollView, StyleSheet, Dimensions } from 'react-native'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faLightbulb, faBriefcase, faFileLines, faBrain, faArrowLeftLong, faStar } from '@fortawesome/free-solid-svg-icons';
-import { TextInput } from 'react-native-paper';
 import { LineChart } from 'react-native-chart-kit';
 
 const Performance = ({ navigation }) => {
@@ -72,7 +71,7 @@ const Performance = ({ navigation }) => {
                         <View style={{ width: '45%', borderWidth: 1, borderColor: 'lightgrey', margin: 5, borderRadius: 12 }}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', width: '90%', padding: 10, margin: 6, borderBottomWidth: 1, borderBottomColor: 'lightgrey' }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
                                     <Text style={{ color: "grey", fontSize: 11, fontFamily: 'mainFont' }}>Jessica Androso</Text>
@@ -91,7 +90,7 @@ const Performance = ({ navigation }) => {
                         <View style={{ width: '45%', borderWidth: 1, borderColor: 'lightgrey', margin: 5, borderRadius: 12 }}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', width: '90%', padding: 10, margin: 6, borderBottomWidth: 1, borderBottomColor: 'lightgrey' }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
                                     <Text style={{ color: "grey", fontSize: 11, fontFamily: 'mainFont' }}>Jessica Androso</Text>
@@ -112,7 +111,7 @@ const Performance = ({ navigation }) => {
                         <View style={{ width: '45%', borderWidth: 1, borderColor: 'lightgrey', margin: 5, borderRadius: 12 }}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', width: '90%', padding: 10, margin: 6, borderBottomWidth: 1, borderBottomColor: 'lightgrey' }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
 
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
@@ -132,7 +131,7 @@ const Performance = ({ navigation }) => {
                         <View style={{ width: '45%', borderWidth: 1, borderColor: 'lightgrey', margin: 5, borderRadius: 12 }}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', width: '90%', padding: 10, margin: 6, borderBottomWidth: 1, borderBottomColor: 'lightgrey' }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
 
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>

@@ -15,9 +15,8 @@ const Resetpassword = ({ navigation }) => {
     const [confirmpassword, setconfirmpassword] = useState("")
     const [confirmpass, setconfirmpass] = useState(true)
 
-
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -62,14 +61,14 @@ const Resetpassword = ({ navigation }) => {
     return (
         <>
             <View style={{ width: '100%' }}>
-                <View style={{ width: '100%', alignSelf: 'center', backgroundColor: '#233CBF', flexDirection: 'row' ,alignItems:'center',paddingTop:30}}>
-                    <TouchableOpacity onPress={() => navigation.navigate("Profile")} style={{marginLeft:10,width:'3%'}}>
+                <View style={{ width: '100%', alignSelf: 'center', backgroundColor: '#233CBF', flexDirection: 'row', alignItems: 'center', paddingTop: 30 }}>
+                    <TouchableOpacity onPress={() => navigation.navigate("Profile")} style={{ marginLeft: 10, width: '3%' }}>
                         <FontAwesomeIcon style={{ width: '10%' }} color='white' size={20} icon={faArrowLeftLong} />
                     </TouchableOpacity>
-                    <Text style={{ fontFamily: 'mainFont', fontSize: 20, textAlign: 'center', color: 'white', padding: 20 ,width:'97%'}}>Change Password</Text>
+                    <Text style={{ fontFamily: 'mainFont', fontSize: 20, textAlign: 'center', color: 'white', padding: 20, width: '97%' }}>Change Password</Text>
                 </View>
-                <View style={{ marginTop: 30, marginBottom: 30, width: '95%', alignSelf: 'center', padding: 5}}>
-                    <Text style={{ fontFamily: 'mainFont', fontSize: 12, lineHeight: 17, fontFamily: 'mainFont' ,textAlign: 'center'}}>Password must be contains at least 1 letter, 1 number, and symbol. Minimun lenght is 12 characters.</Text>
+                <View style={{ marginTop: 30, marginBottom: 30, width: '95%', alignSelf: 'center', padding: 5 }}>
+                    <Text style={{ fontFamily: 'mainFont', fontSize: 12, lineHeight: 17, fontFamily: 'mainFont', textAlign: 'center' }}>Password must be contains at least 1 letter, 1 number, and symbol. Minimun lenght is 12 characters.</Text>
                 </View>
                 <Text style={{ marginLeft: 40, color: 'grey', margin: 5, fontFamily: 'mainFont' }}>Current Password</Text>
                 <View style={{ flexDirection: 'row', alignItems: "center", borderColor: '#5E73E4', borderWidth: 1, width: '80%', alignSelf: 'center', padding: 14, borderRadius: 12, margin: 12 }}>

@@ -6,7 +6,7 @@ import { faCircle, faCalendarPlus, faArrowLeftLong } from '@fortawesome/free-sol
 
 const Getstarted = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf") 
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -20,7 +20,7 @@ const Getstarted = ({ navigation }) => {
                         <FontAwesomeIcon style={{ width: '100%' }} color='#233CBF' size={22} icon={faArrowLeftLong} />
                     </TouchableOpacity>
                     <View style={{ width: 370, height: 330, alignSelf: 'center', marginTop: 20 }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/getstarted.jpg")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/getstarted.jpg")} />
                     </View>
                     <View style={{ padding: 10, width: '100%', alignSelf: 'center' }}>
                         <Text style={{ fontSize: 26, fontFamily: 'mainFont', textAlign: 'center', padding: 10 }}>Get Started</Text>
