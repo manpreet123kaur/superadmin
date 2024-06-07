@@ -14,7 +14,7 @@ const HolidayT = ({ navigation }) => {
     const [calendar, setCalendar] = useState(false);
 
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -48,7 +48,7 @@ const HolidayT = ({ navigation }) => {
             <ScrollView>
                 <View style={{ height: '100%', backgroundColor: 'white' }}>
                     <View style={{ width: 373, height: 300, alignSelf: 'center' }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/holidaypichture.jpg")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/holidaypichture.jpg")} />
                     </View>
                     <View style={{ backgroundColor: 'white', alignSelf: 'center', width: '92%', borderRadius: 20, padding: 20, marginTop: -20, borderWidth: 1, borderColor: '#1e49ca', borderBottomWidth: 4 }}>
                         <View>

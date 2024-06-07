@@ -5,7 +5,7 @@ import * as Progress from 'react-native-progress';
 
 const Teammanage = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")   
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -22,7 +22,7 @@ const Teammanage = ({ navigation }) => {
                     <Text style={{ fontFamily: 'mainFont', fontSize: 12, width: '10%', textAlign: 'right', fontWeight: '700' }}>73%</Text>
                 </View>
                 <View style={{ width: 80, height: 40 }}>
-                    <Image style={{ width: "100%", height: "100%" }} source={require("../pages/assests/images/users.png")} />
+                    <Image style={{ width: "100%", height: "100%" }} source={require("../assets/images/users.png")} />
                 </View>
             </TouchableOpacity>
 
@@ -38,7 +38,7 @@ const Teammanage = ({ navigation }) => {
                     </View>
                 </View>
                 <View style={{ width: 80, height: 40 }}>
-                    <Image style={{ width: "100%", height: "100%" }} source={require("../pages/assests/images/users.png")} />
+                    <Image style={{ width: "100%", height: "100%" }} source={require("../assets/images/users.png")} />
                 </View>
             </TouchableOpacity>
 
@@ -54,7 +54,7 @@ const Teammanage = ({ navigation }) => {
                     </View>
                 </View>
                 <View style={{ width: 80, height: 40 }}>
-                    <Image style={{ width: "100%", height: "100%" }} source={require("../pages/assests/images/users.png")} />
+                    <Image style={{ width: "100%", height: "100%" }} source={require("../assets/images/users.png")} />
                 </View>
             </TouchableOpacity>
         </View>

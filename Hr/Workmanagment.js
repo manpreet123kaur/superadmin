@@ -41,7 +41,7 @@ const Workmanagment = ({ navigation }) => {
     }
 
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -50,7 +50,6 @@ const Workmanagment = ({ navigation }) => {
     return (
         <ScrollView>
             <View style={{ width: '100%', height: '100%', marginBottom: 60, backgroundColor: "white" }}>
-
                 <View style={{ width: "80%", alignSelf: 'center', padding: 15 }}>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }} onPress={apple}>
                         <FontAwesomeIcon color="#000ff8" size={10} icon={faCircle} />

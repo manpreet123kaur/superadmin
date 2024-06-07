@@ -20,7 +20,7 @@ const CustomDrawer = (props) => {
         setchangepassword(!changepassword);
     };
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf") 
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -32,7 +32,7 @@ const CustomDrawer = (props) => {
                 <View style={{ height: 170, justifyContent: "center", alignItems: "center", alignContent: "center", borderBottomColor: 'lightgrey', borderBottomWidth: 2, borderRadius: 10 }}>
                     <View style={{ width: 90, height: 90, backgroundColor: "#233CBF", borderRadius: 100, justifyContent: "center", alignContent: "center", alignItems: "center" }}>
                         <View style={{ width: 100, height: 100 }}>
-                            <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/logo.png")} />
+                            <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/logo.png")} />
                         </View>
                     </View>
                     <Text style={{ fontFamily: "mainFont", marginTop: 15, fontSize: 18, }}>Super Admin</Text>

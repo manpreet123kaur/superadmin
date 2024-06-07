@@ -8,7 +8,7 @@ import * as ImagePicker from "expo-image-picker";
 
 const Adminsprofile = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -130,7 +130,6 @@ const Adminsprofile = ({ navigation }) => {
                     <View style={{ backgroundColor: 'white', width: '80%', alignSelf: 'center', borderRadius: 10, padding: 0 }}>
                         <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: '#233CBF', borderTopRightRadius: 10, padding: 15, borderTopLeftRadius: 10 }}>
                             <Text style={{ color: 'white', fontSize: 16, width: '93%', fontFamily: 'mainFont' }}>Edit Your Details</Text>
-                            {/* <FontAwesomeIcon color='white' icon={faXmark} /> */}
                         </View>
                         <View style={{ flexDirection: 'row', alignItems: 'center', padding: 10 }}>
                             <Text style={{ fontFamily: 'mainFont', width: '25%', fontSize: 13 }}>First Name:   </Text>
@@ -164,7 +163,6 @@ const Adminsprofile = ({ navigation }) => {
                     <View style={{ backgroundColor: 'white', width: '80%', alignSelf: 'center', borderRadius: 10, padding: 0 }}>
                         <View style={{ flexDirection: 'row', alignItems: 'center', backgroundColor: '#233CBF', borderTopRightRadius: 10, padding: 15, borderTopLeftRadius: 10 }}>
                             <Text style={{ color: 'white', fontSize: 16, width: '93%', fontFamily: 'mainFont' }}>Change Password</Text>
-                            {/* <FontAwesomeIcon color='white' icon={faXmark} /> */}
                         </View>
                         <View style={{ flexDirection: 'row', alignItems: 'center', padding: 10 }}>
                             <Text style={{ fontFamily: 'mainFont', width: '35%', fontSize: 13 }}>Old Password :</Text>

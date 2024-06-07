@@ -6,7 +6,7 @@ import { faArrowLeftLong, faEnvelope, faLock, faArrowLeft, faEye, faEllipsis } f
 
 const Taskperformance = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;

@@ -10,7 +10,7 @@ const Login = ({ navigation }) => {
     const [pass, setPass] = useState(false);
 
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf") 
     });
 
     if (!fontsLoaded) {
@@ -97,7 +97,7 @@ const Login = ({ navigation }) => {
                             <FontAwesomeIcon style={{ width: '10%' }} color='#233CBF' size={22} icon={faArrowLeftLong} />
                         </TouchableOpacity>
                         <View style={{ width: 240, height: 220, alignSelf: 'center', marginTop: 40 }}>
-                            <Image style={{ width: "100%", height: "100%", borderRadius: 20 }} source={require("../pages/assests/images/login.jpg")} />
+                            <Image style={{ width: "100%", height: "100%", borderRadius: 20 }} source={require("../assets/images/login.jpg")} />
                         </View>
                         <View style={{ width: '100%', padding: 15 }}>
                             <Text style={{ color: '#233CBF', fontSize: 25, fontFamily: 'mainFont', fontWeight: 700, textAlign: 'center' }}>Welcome back!</Text>

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { useFonts } from "expo-font";
 import { Text, View, TouchableOpacity, ScrollView, Image } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faCircle, faArrowLeftLong, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Chooseplan = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -17,7 +17,7 @@ const Chooseplan = ({ navigation }) => {
             <ScrollView>
                 <View style={{ width: "97%", alignSelf: 'center', backgroundColor: 'white', paddingBottom: 60 }}>
                     <View style={{ width: 370, height: 330, margin: 50, alignSelf: 'center' }}>
-                        <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/Chooseplan.jpg")} />
+                        <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/Chooseplan.jpg")} />
                     </View>
                     <View style={{ padding: 10, width: '100%', alignSelf: 'center' }}>
                         <Text style={{ fontSize: 26, fontFamily: 'mainFont', textAlign: 'center', padding: 10 }}>Choose Your Way</Text>

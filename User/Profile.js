@@ -3,13 +3,12 @@ import { useFonts } from "expo-font";
 import { Text, TextInput, TouchableOpacity, View, Image, ScrollView, StyleSheet, Switch, ImageBackground } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faStar, faCircle, faTrashCan, faCircleCheck, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { SelectList } from 'react-native-dropdown-select-list'
 
 const Profile = ({ navigation }) => {
     const image = { uri: 'https://i.pinimg.com/564x/66/14/74/6614745c30fe90d3f6e1257614bf0678.jpg' };
 
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -26,7 +25,7 @@ const Profile = ({ navigation }) => {
                         </View>
                         <View style={{ margin: 10 }}>
                             <View style={{ width: 100, height: 100, position: 'relative', marginLeft: 10, borderWidth: 1, borderColor: 'grey', padding: 5 }}>
-                                <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                             </View>
                         </View>
                     </View>

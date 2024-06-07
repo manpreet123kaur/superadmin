@@ -4,7 +4,7 @@ import { Text, View, ScrollView, Image } from 'react-native';
 
 const ApppeningScreen = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")
     });
 
     const [navigateToNextScreen, setNavigateToNextScreen] = useState(false);
@@ -30,7 +30,7 @@ const ApppeningScreen = ({ navigation }) => {
     return (
         <ScrollView contentContainerStyle={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#233CBF', height: '100%' }}>
             <View style={{ width: 200, height: 200, justifyContent: 'space-between' }}>
-                <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/logo.png")} />
+                <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/logo.png")} />
             </View>
         </ScrollView>
     );

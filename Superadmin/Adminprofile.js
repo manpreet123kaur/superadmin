@@ -60,7 +60,7 @@ const Adminprofile = ({ navigation }) => {
                 <View style={{ width: '100%', backgroundColor: '#233CBF', paddingBottom: 40 }}>
                     <View style={{ paddingTop: 20, alignSelf: 'center', paddingBottom: 30 }}>
                         <View style={{ width: 110, height: 110, padding: 5 }}>
-                            <Image style={{ width: '100%', height: '100%', borderRadius: 100 }} source={require("../pages/assests/images/kaviya.png")} />
+                            <Image style={{ width: '100%', height: '100%', borderRadius: 100 }} source={require("../assets/images/kaviya.png")} />
                         </View>
                         <Text style={{ color: 'white', fontFamily: 'mainFont' }}>Jessica Jones</Text>
                     </View>

@@ -33,7 +33,7 @@ const Signup = ({ navigation }) => {
     };
 
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf") 
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -123,7 +123,7 @@ const Signup = ({ navigation }) => {
                             <Text style={{ color: 'black', fontSize: 15, fontFamily: 'mainFont', textAlign: 'center', paddingLeft: 10, paddingRight: 10 }}>Create an account to Q Allure to get all features</Text>
                         </View>
                         <View style={{ width: 200, height: 200, alignSelf: 'center' }}>
-                            <Image style={{ width: "100%", height: "100%", borderRadius: 20 }} source={require("../pages/assests/images/vector2.png")} />
+                            <Image style={{ width: "100%", height: "100%", borderRadius: 20 }} source={require("../assets/images/vector2.png")} />
                         </View>
                         <View style={{ width: '100%' }}>
                             <View style={{ flexDirection: 'row', alignItems: "center", borderColor: '#5E73E4', borderWidth: 1, width: '80%', alignSelf: 'center', padding: 9, borderRadius: 12, marginTop: 12 }}>

@@ -4,7 +4,7 @@ import { Text, View, Image, TouchableOpacity, ScrollView } from 'react-native'
 
 const Teaminfo = ({ navigation }) => {
     const [fontsLoaded] = useFonts({
-        mainFont: require("../pages/assests/fonts/Metropolis-Medium.otf")
+        mainFont: require("../assets/fonts/Metropolis-Medium.otf")  
     });
     if (!fontsLoaded) {
         return <Text>Loading...</Text>;
@@ -17,7 +17,7 @@ const Teaminfo = ({ navigation }) => {
                         <View style={{ borderWidth: 1, borderColor: 'lightgrey', borderRadius: 12, width: "45%", margin: 8 }}>
                             <View style={{ width: '90%', padding: 5, marginTop: 5 }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8, marginLeft: 12 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
                                     <Text style={{ color: "grey", fontSize: 11, fontFamily: 'mainFont' }}>Kake Midleton</Text>
@@ -31,14 +31,14 @@ const Teaminfo = ({ navigation }) => {
                                     <Text style={{ height: 3, width: 30, backgroundColor: '#F39200' }}></Text>
                                 </View>
                                 <View style={{ width: 75, height: 38, marginLeft: 10, marginTop: 10 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/users.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/users.png")} />
                                 </View>
                             </View>
                         </View>
                         <View style={{ borderWidth: 1, borderColor: 'lightgrey', borderRadius: 12, width: "50%", margin: 8 }}>
                             <View style={{ width: '90%', padding: 5, marginTop: 5 }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8, marginLeft: 12 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
                                     <Text style={{ color: "grey", fontSize: 11, fontFamily: 'mainFont' }}>Kake Midleton</Text>
@@ -52,7 +52,7 @@ const Teaminfo = ({ navigation }) => {
                                     <Text style={{ height: 3, width: 30, backgroundColor: '#F39200' }}></Text>
                                 </View>
                                 <View style={{ width: 75, height: 38, marginLeft: 10, marginTop: 10 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/users.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/users.png")} />
                                 </View>
                             </View>
                         </View>
@@ -62,7 +62,7 @@ const Teaminfo = ({ navigation }) => {
                         <View style={{ borderWidth: 1, borderColor: 'lightgrey', borderRadius: 12, width: "45%", margin: 8 }}>
                             <View style={{ width: '90%', padding: 5, marginTop: 5 }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8, marginLeft: 12 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
                                     <Text style={{ color: "grey", fontSize: 11, fontFamily: 'mainFont' }}>Kake Midleton</Text>
@@ -76,14 +76,14 @@ const Teaminfo = ({ navigation }) => {
                                     <Text style={{ height: 3, width: 30, backgroundColor: '#F39200' }}></Text>
                                 </View>
                                 <View style={{ width: 75, height: 38, marginLeft: 10, marginTop: 10 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/users.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/users.png")} />
                                 </View>
                             </View>
                         </View>
                         <View style={{ borderWidth: 1, borderColor: 'lightgrey', borderRadius: 12, width: "50%", margin: 8 }}>
                             <View style={{ width: '90%', padding: 5, marginTop: 5 }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8, marginLeft: 12 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
                                     <Text style={{ color: "grey", fontSize: 11, fontFamily: 'mainFont' }}>Kake Midleton</Text>
@@ -97,7 +97,7 @@ const Teaminfo = ({ navigation }) => {
                                     <Text style={{ height: 3, width: 30, backgroundColor: '#F39200' }}></Text>
                                 </View>
                                 <View style={{ width: 75, height: 38, marginLeft: 10, marginTop: 10 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/users.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/users.png")} />
                                 </View>
                             </View>
                         </View>
@@ -107,7 +107,7 @@ const Teaminfo = ({ navigation }) => {
                         <View style={{ borderWidth: 1, borderColor: 'lightgrey', borderRadius: 12, width: "45%", margin: 8 }}>
                             <View style={{ width: '90%', padding: 5, marginTop: 5 }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8, marginLeft: 12 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
                                     <Text style={{ color: "grey", fontSize: 11, fontFamily: 'mainFont' }}>Kake Midleton</Text>
@@ -121,14 +121,14 @@ const Teaminfo = ({ navigation }) => {
                                     <Text style={{ height: 3, width: 30, backgroundColor: '#F39200' }}></Text>
                                 </View>
                                 <View style={{ width: 75, height: 38, marginLeft: 10, marginTop: 10 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/users.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/users.png")} />
                                 </View>
                             </View>
                         </View>
                         <View style={{ borderWidth: 1, borderColor: 'lightgrey', borderRadius: 12, width: "50%", margin: 8 }}>
                             <View style={{ width: '90%', padding: 5, marginTop: 5 }}>
                                 <View style={{ width: 40, height: 40, borderWidth: 1, padding: 2, borderColor: "#233CBF", borderRadius: 8, marginLeft: 12 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/kaviya.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/kaviya.png")} />
                                 </View>
                                 <View style={{ width: '80%', margin: 8 }}>
                                     <Text style={{ color: "grey", fontSize: 11, fontFamily: 'mainFont' }}>Kake Midleton</Text>
@@ -142,7 +142,7 @@ const Teaminfo = ({ navigation }) => {
                                     <Text style={{ height: 3, width: 30, backgroundColor: '#F39200' }}></Text>
                                 </View>
                                 <View style={{ width: 75, height: 38, marginLeft: 10, marginTop: 10 }}>
-                                    <Image style={{ width: '100%', height: '100%' }} source={require("../pages/assests/images/users.png")} />
+                                    <Image style={{ width: '100%', height: '100%' }} source={require("../assets/images/users.png")} />
                                 </View>
                             </View>
                         </View>
